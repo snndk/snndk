@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 
+var port = process.env.PORT || 3000;
 var maintenance=0;
 var app = express();
 
@@ -60,4 +61,4 @@ app.get('/bad',(req,res)=>{
 });
 
 
-app.listen(8080);
+app.listen(port);
